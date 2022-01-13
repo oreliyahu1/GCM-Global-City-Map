@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="680.0" prefWidth="793.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiControllers.Manage_RequestsController">
+   <children>
+      <Pane fx:id="pnlOverview" layoutX="-6.0" prefHeight="690.0" prefWidth="809.0" style="-fx-background-color: #EBE8F9;&#10;">
+         <children>
+            <Pane fx:id="paneratesmy" layoutY="88.0" prefHeight="612.0" prefWidth="803.0" style="-fx-background-color: #EBE8F9;&#10;" visible="false">
+               <children>
+                  <Pane layoutX="36.0" layoutY="24.0" prefHeight="42.0" prefWidth="738.0" style="-fx-background-color: #BDBBC3;">
+                     <children>
+                        <Label layoutX="541.0" layoutY="13.0" text="Status" />
+                        <Label layoutX="305.0" layoutY="13.0" text="Price" textFill="BLACK" />
+                        <Label layoutX="215.0" layoutY="13.0" text="Type" textFill="BLACK" />
+                        <Label layoutX="53.0" layoutY="13.0" text="Date" textFill="BLACK" />
+                        <Label layoutX="431.0" layoutY="13.0" text="Days" textFill="BLACK" />
+                        <Button id="login_btn" fx:id="btn_set_rate" disable="false" layoutX="622.0" layoutY="5.0" minHeight="25.951171875" mnemonicParsing="false" onMouseClicked="#btn_set_rate_clicked" prefHeight="33.0" prefWidth="112.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20;" text="Set Rate">
+                           <stylesheets>
+                              <URL value="@style.css" />
+                           </stylesheets>
+                           <graphic>
+                              <ImageView fitHeight="21.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/icons8-renew-96.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <ScrollPane hbarPolicy="NEVER" layoutX="36.0" layoutY="77.0" prefHeight="449.0" prefWidth="738.0" style="-fx-background-color: #EBE8F9;" vbarPolicy="ALWAYS">
+                     <stylesheets>
+                        <URL value="@style.css" />
+                     </stylesheets>
+                     <content>
+                        <VBox fx:id="pnitemsr1" prefHeight="474.0" prefWidth="737.0" spacing="5.0" style="-fx-background-color: #EBE8F9;&#10;">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </Pane>
+            <Pane fx:id="paneversionsmy" layoutY="88.0" prefHeight="612.0" prefWidth="809.0" style="-fx-background-color: #EBE8F9;&#10;" visible="false">
+               <children>
+                  <Pane layoutX="36.0" layoutY="24.0" prefHeight="42.0" prefWidth="738.0" style="-fx-background-color: #BDBBC3;">
+                     <children>
+                        <Label layoutX="541.0" layoutY="13.0" text="Status" />
+                        <Label layoutX="305.0" layoutY="13.0" text="City" textFill="BLACK" />
+                        <Label layoutX="200.0" layoutY="13.0" text="Conutry" textFill="BLACK" />
+                        <Label layoutX="53.0" layoutY="13.0" text="Date" textFill="BLACK" />
+                        <Label layoutX="417.0" layoutY="13.0" text="Version" textFill="BLACK" />
+                     </children>
+                  </Pane>
+                  <ScrollPane hbarPolicy="NEVER" layoutX="36.0" layoutY="77.0" prefHeight="449.0" prefWidth="738.0" style="-fx-background-color: #EBE8F9;" vbarPolicy="ALWAYS">
+                     <stylesheets>
+                        <URL value="@style.css" />
+                     </stylesheets>
+                     <content>
+                        <VBox fx:id="pnitemsv1" prefHeight="456.0" prefWidth="737.0" spacing="5.0" style="-fx-background-color: #EBE8F9;&#10;">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </Pane>
+            <Pane fx:id="paneversions" layoutY="88.0" prefHeight="612.0" prefWidth="809.0" style="-fx-background-color: #EBE8F9;&#10;" visible="false">
+               <children>
+                  <Pane layoutX="36.0" layoutY="24.0" prefHeight="42.0" prefWidth="738.0" style="-fx-background-color: #BDBBC3;">
+                     <children>
+                        <Label layoutX="541.0" layoutY="13.0" text="From" />
+                        <Label layoutX="305.0" layoutY="13.0" text="City" textFill="BLACK" />
+                        <Label layoutX="200.0" layoutY="13.0" text="Conutry" textFill="BLACK" />
+                        <Label layoutX="53.0" layoutY="13.0" text="Date" textFill="BLACK" />
+                        <Label layoutX="417.0" layoutY="13.0" text="Version" textFill="BLACK" />
+                     </children>
+                  </Pane>
+                  <ScrollPane hbarPolicy="NEVER" layoutX="36.0" layoutY="77.0" prefHeight="449.0" prefWidth="738.0" style="-fx-background-color: #EBE8F9;" vbarPolicy="ALWAYS">
+                     <stylesheets>
+                        <URL value="@style.css" />
+                     </stylesheets>
+                     <content>
+                        <VBox fx:id="pnitemsv" prefHeight="456.0" prefWidth="737.0" spacing="5.0" style="-fx-background-color: #EBE8F9;&#10;">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </Pane>
+            <Pane fx:id="panerates" layoutY="88.0" prefHeight="612.0" prefWidth="803.0" style="-fx-background-color: #EBE8F9;&#10;" visible="false">
+               <children>
+                  <Pane layoutX="36.0" layoutY="24.0" prefHeight="42.0" prefWidth="738.0" style="-fx-background-color: #BDBBC3;">
+                     <children>
+                        <Label layoutX="541.0" layoutY="13.0" text="Days" />
+                        <Label layoutX="305.0" layoutY="13.0" text="Type" textFill="BLACK" />
+                        <Label layoutX="215.0" layoutY="13.0" text="From" textFill="BLACK" />
+                        <Label layoutX="53.0" layoutY="13.0" text="Date" textFill="BLACK" />
+                        <Label layoutX="431.0" layoutY="13.0" text="Price" textFill="BLACK" />
+                     </children>
+                  </Pane>
+                  <ScrollPane hbarPolicy="NEVER" layoutX="36.0" layoutY="77.0" prefHeight="449.0" prefWidth="738.0" style="-fx-background-color: #EBE8F9;" vbarPolicy="ALWAYS">
+                     <stylesheets>
+                        <URL value="@style.css" />
+                     </stylesheets>
+                     <content>
+                        <VBox fx:id="pnitemsr" prefHeight="474.0" prefWidth="737.0" spacing="5.0" style="-fx-background-color: #EBE8F9;&#10;">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </Pane>
+            <Button id="login_btn" fx:id="btn_version" disable="false" layoutX="218.0" layoutY="25.0" minHeight="25.951171875" mnemonicParsing="false" onMouseClicked="#btn_version_clicked" prefHeight="52.0" prefWidth="206.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20;" text="Manage Version">
+               <stylesheets>
+                  <URL value="@style.css" />
+               </stylesheets>
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/icons8-software-80.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button id="login_btn" fx:id="btn_rates" disable="false" layoutX="607.0" layoutY="25.0" minHeight="25.951171875" mnemonicParsing="false" onMouseClicked="#btn_rates_clicked" prefHeight="52.0" prefWidth="188.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20;" text="Manage Rates">
+               <stylesheets>
+                  <URL value="@style.css" />
+               </stylesheets>
+               <graphic>
+                  <ImageView fitHeight="44.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/icons8-renew-96.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button id="login_btn" fx:id="btn_rates1" disable="false" layoutX="439.0" layoutY="25.0" minHeight="25.951171875" mnemonicParsing="false" onMouseClicked="#btn_myrates_clicked" prefHeight="52.0" prefWidth="154.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20;" text="My Rates">
+               <stylesheets>
+                  <URL value="@style.css" />
+               </stylesheets>
+               <graphic>
+                  <ImageView fitHeight="44.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/icons8-renew-96.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button id="login_btn" fx:id="btn_version1" disable="false" layoutX="36.0" layoutY="25.0" minHeight="25.951171875" mnemonicParsing="false" onMouseClicked="#btn_myversion_clicked" prefHeight="52.0" prefWidth="171.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20;" text="My Versions">
+               <stylesheets>
+                  <URL value="@style.css" />
+               </stylesheets>
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/icons8-software-80.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

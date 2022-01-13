@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="200.0" prefWidth="150.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiControllers.LoadingController">
+   <children>
+      <ImageView fitHeight="200.0" fitWidth="150.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/Loading.gif" />
+         </image>
+      </ImageView>
+      <Label fx:id="label_message" alignment="CENTER" contentDisplay="CENTER" lineSpacing="4.0" prefHeight="57.0" prefWidth="150.0" style="-fx-background-color: black; -fx-background-radius: 15px;" text="text text text" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_exit" alignment="CENTER" contentDisplay="CENTER" layoutY="177.0" lineSpacing="4.0" onMouseClicked="#label_click_exit" prefHeight="23.0" prefWidth="150.0" style="-fx-background-color: black; -fx-background-radius: 15px;" text="Exit without saving changes" textAlignment="CENTER" textFill="WHITE" underline="true" wrapText="true">
+         <font>
+            <Font size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>

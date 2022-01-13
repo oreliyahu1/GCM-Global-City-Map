@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="680.0" prefWidth="793.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiControllers.Catalog.SelectedCity_ToursPlacesController">
+   <children>
+      <Pane fx:id="pnlOverview" layoutX="-6.0" prefHeight="690.0" prefWidth="809.0" style="-fx-background-color: #EBE8F9;&#10;">
+         <children>
+            <ScrollPane fx:id="scrollitems" hbarPolicy="NEVER" layoutX="26.0" layoutY="111.0" prefHeight="441.0" prefWidth="475.0" style="-fx-background-color: #EBE8F9;" vbarPolicy="ALWAYS">
+               <content>
+                  <VBox fx:id="pnItems" prefHeight="465.0" prefWidth="474.0" spacing="5.0" style="-fx-background-color: #EBE8F9;&#10;">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+               </content>
+               <stylesheets>
+                  <URL value="@style.css" />
+               </stylesheets>
+            </ScrollPane>
+            <Pane fx:id="paneup" layoutX="23.0" layoutY="69.0" prefHeight="42.0" prefWidth="488.0" style="-fx-background-color: #BDBBC3;">
+               <children>
+                  <Label layoutX="62.0" layoutY="12.0" text="Name" textFill="BLACK" />
+                  <Label layoutX="290.0" layoutY="12.0" text="Accessable" textFill="BLACK" />
+                  <ImageView fx:id="btn_drag" fitHeight="34.0" fitWidth="32.0" layoutX="425.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8-move-32.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <ScrollPane fx:id="scroll_" hbarPolicy="NEVER" layoutX="519.0" layoutY="116.0" prefHeight="441.0" prefWidth="263.0" style="-fx-background-color: #EBE8F9;" vbarPolicy="ALWAYS">
+               <content>
+                  <VBox fx:id="pnItems2" prefHeight="448.0" prefWidth="243.0" spacing="5.0" style="-fx-background-color: #EBE8F9;&#10;">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+               </content>
+               <stylesheets>
+                  <URL value="@../style.css" />
+               </stylesheets>
+            </ScrollPane>
+            <Pane fx:id="pane1_" layoutX="515.0" layoutY="69.0" prefHeight="42.0" prefWidth="270.0" style="-fx-background-color: #BDBBC3;">
+               <children>
+                  <Label layoutX="93.0" layoutY="11.0" text="City Places" textFill="BLACK" />
+               </children>
+            </Pane>
+            <Pane fx:id="pane_add_window2" layoutX="23.0" layoutY="23.0" prefHeight="42.0" prefWidth="761.0" style="-fx-background-color: #BDBBC3;">
+               <children>
+                  <HBox layoutX="2.0" layoutY="2.0" maxWidth="-Infinity" prefHeight="38.0" prefWidth="488.0" style="-fx-background-color: #EBE8F9;&#10;-fx-border-color: #a2a2a2;&#10;-fx-border-width: 2px 2px 2px 2px;&#10;-fx-focus-color: #d35244;&#10; -fx-faint-focus-color: #d3524422;" styleClass="null">
+                     <children>
+                        <TextField fx:id="txt_name" prefHeight="34.0" prefWidth="459.0" promptText="Tour name" style="-fx-background-color: transparent;&#10;">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                        <ImageView fitHeight="18.249900153702654" fitWidth="24.33319854736328" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/icons8-city-buildings-50.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="2.0" top="5.0" fx:id="x3" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <CheckBox fx:id="checkbox_recommended" layoutX="502.0" layoutY="11.0" mnemonicParsing="false" text="Recommended Tour?" />
+               </children>
+            </Pane>
+            <Pane fx:id="pane_add_window" layoutX="23.0" layoutY="557.0" prefHeight="42.0" prefWidth="646.0" style="-fx-background-color: #BDBBC3;">
+               <children>
+                  <HBox layoutX="2.0" layoutY="2.0" maxWidth="-Infinity" prefHeight="38.0" prefWidth="635.0" style="-fx-background-color: #EBE8F9;&#10;-fx-border-color: #a2a2a2;&#10;-fx-border-width: 2px 2px 2px 2px;&#10;-fx-focus-color: #d35244;&#10; -fx-faint-focus-color: #d3524422;" styleClass="null">
+                     <children>
+                        <TextField fx:id="txt_desc" prefHeight="34.0" prefWidth="605.0" promptText="Tour Description" style="-fx-background-color: transparent;&#10;">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                        <ImageView fitHeight="18.249900153702654" fitWidth="24.33319854736328" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/icons8-city-buildings-50.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="2.0" top="5.0" fx:id="x31" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+            <Button id="login_btn" fx:id="btn_save" layoutX="676.0" layoutY="557.0" minHeight="25.951171875" mnemonicParsing="false" onMouseClicked="#btn_save_click" prefHeight="42.0" prefWidth="100.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20;" text="Save">
+               <stylesheets>
+                  <URL value="@../style.css" />
+               </stylesheets>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8-plus-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

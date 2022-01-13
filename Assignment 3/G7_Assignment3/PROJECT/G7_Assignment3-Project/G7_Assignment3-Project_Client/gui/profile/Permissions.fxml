@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="340.0" prefWidth="721.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiControllers.Profile.UpdatePermissionsController">
+   <children>
+      <Pane fx:id="pnlOverview" prefHeight="340.0" prefWidth="728.0" style="-fx-background-color: #EBE8F9;&#10;">
+         <children>
+            <Button id="login_btn" fx:id="btn_cancel" disable="false" layoutX="626.0" layoutY="292.0" minHeight="25.951171875" mnemonicParsing="false" onMouseClicked="#btn_cancel_click" prefHeight="34.0" prefWidth="86.0" style="-fx-border-color: #2A78FF; -fx-border-radius: 20; -fx-background-color: transparent;" text="Cancel">
+               <stylesheets>
+                  <URL value="@style.css" />
+               </stylesheets>
+            </Button>
+            <Button id="login_btn" fx:id="btn_update" disable="false" layoutX="446.0" layoutY="292.0" minHeight="25.951171875" mnemonicParsing="false" onMouseClicked="#btn_edit_permission_click" prefHeight="34.0" prefWidth="167.0" style="-fx-border-color: #2A78FF; -fx-border-radius: 20; -fx-background-color: transparent;" text="Update Permissions">
+               <stylesheets>
+                  <URL value="@style.css" />
+               </stylesheets>
+            </Button>
+            <CheckBox fx:id="purchase" layoutX="25.0" layoutY="133.0" mnemonicParsing="false" text="Purchase" />
+            <Pane layoutX="25.0" layoutY="24.0" prefHeight="73.0" prefWidth="687.0" style="-fx-background-color: #BDBBC3;">
+               <children>
+                  <RadioButton fx:id="client" layoutX="24.0" layoutY="28.0" mnemonicParsing="false" text="Client" />
+                  <RadioButton fx:id="worker" layoutX="108.0" layoutY="28.0" mnemonicParsing="false" text="Worker" />
+                  <RadioButton fx:id="productdworker" layoutX="200.0" layoutY="28.0" mnemonicParsing="false" text="Product Department Worker" />
+                  <RadioButton fx:id="productdmanager" layoutX="433.0" layoutY="26.0" mnemonicParsing="false" text="Product Department Manager" />
+               </children>
+            </Pane>
+            <CheckBox fx:id="editcatalog" layoutX="130.0" layoutY="169.0" mnemonicParsing="false" text="Edit Catalog" />
+            <CheckBox fx:id="deletecatalog" layoutX="130.0" layoutY="205.0" mnemonicParsing="false" text="Delete Catalog" />
+            <CheckBox fx:id="raterequest" layoutX="279.0" layoutY="133.0" mnemonicParsing="false" text="Rate Request" />
+            <CheckBox fx:id="rateapproval" layoutX="279.0" layoutY="169.0" mnemonicParsing="false" text="Rate Request Approval" />
+            <CheckBox fx:id="versionrequest" layoutX="279.0" layoutY="205.0" mnemonicParsing="false" text="Version Request" />
+            <CheckBox fx:id="versionapproval" layoutX="279.0" layoutY="243.0" mnemonicParsing="false" text="Version Request Approval" />
+            <CheckBox fx:id="viewcatalog" layoutX="130.0" layoutY="133.0" mnemonicParsing="false" text="View Catalog" />
+            <CheckBox fx:id="viewreport" layoutX="495.0" layoutY="133.0" mnemonicParsing="false" text="View Report" />
+            <CheckBox fx:id="usermanagment" layoutX="495.0" layoutY="169.0" mnemonicParsing="false" text="User Managment" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

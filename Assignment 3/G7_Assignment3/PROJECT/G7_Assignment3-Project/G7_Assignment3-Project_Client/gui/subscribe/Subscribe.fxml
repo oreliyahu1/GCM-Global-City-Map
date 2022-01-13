@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="329.0" prefWidth="492.0" style="-fx-effect: innershadow(gaussian, #039ed3, 2, 1.0, 0, 0);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiControllers.Subscribe.SubscribeController">
+   <children>
+      <Pane layoutX="-1.0" layoutY="-2.0" prefHeight="350.0" prefWidth="228.0" style="-fx-background-color: #BDBB90;">
+         <children>
+            <ImageView fitHeight="158.0" fitWidth="167.0" layoutX="31.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/world.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="14.0" layoutY="64.0" prefHeight="30.0" prefWidth="216.0" text="Purchase Maps Collection" wrapText="false">
+               <font>
+                  <Font size="18.0" fx:id="x71" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="pnlOverview" layoutX="227.0" layoutY="1.0" prefHeight="347.0" prefWidth="332.0" style="-fx-background-color: #BDBB90;">
+         <children>
+            <TabPane prefHeight="345.0" prefWidth="334.0" style="-fx-background-color: #BDBBC3;" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Periodically Purchase">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="304.0" prefWidth="332.0">
+                           <children>
+                              <Button id="login_btn" fx:id="btn_cancel1" disable="false" layoutX="230.0" layoutY="257.0" minHeight="25.951171875" mnemonicParsing="false" onMouseClicked="#cancel_click" prefHeight="34.0" prefWidth="86.0" style="-fx-border-color: #2A78FF; -fx-border-radius: 20;" stylesheets="@../style.css" text="Cancel" />
+                              <Button id="login_btn" fx:id="btn_purchase" disable="false" layoutX="95.0" layoutY="257.0" minHeight="25.951171875" mnemonicParsing="false" onMouseClicked="#btn_putchase_subscribe_clicked" prefHeight="34.0" prefWidth="128.0" style="-fx-border-color: #2A78FF; -fx-border-radius: 20;" stylesheets="@../style.css" text="Confirm &amp; Pay" />
+                              <VBox id="VBox" alignment="TOP_CENTER" layoutX="-2.0" minHeight="127.0489501953125" prefHeight="203.0" prefWidth="340.0" style="">
+                                 <children>
+                                    <Label text="Credit Card" />
+                                    <Label fx:id="label_card" text="**** **** **** 1234" />
+                                    <ComboBox fx:id="combobox_rates" prefHeight="31.0" prefWidth="199.0" promptText="Select Package">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" top="10.0" />
+                                       </VBox.margin>
+                                    </ComboBox>
+                                    <HBox maxWidth="-Infinity" prefHeight="-1.0" prefWidth="200.0" style="-fx-background-color: #EBE8F9;&#10;-fx-border-color: #a2a2a2;&#10;-fx-border-width: 2px 2px 2px 2px;&#10;-fx-focus-color: #d35244;&#10; -fx-faint-focus-color: #d3524422;" styleClass="null">
+                                       <children>
+                                          <PasswordField fx:id="txt_pass_para" promptText="Confirm Password" style="-fx-background-color: transparent;" />
+                                          <ImageView fitHeight="18.249900153702654" fitWidth="24.33319854736328" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../image/icons8-versions-48.png" />
+                                             </image>
+                                             <HBox.margin>
+                                                <Insets right="2.0" top="5.0" fx:id="x341" />
+                                             </HBox.margin>
+                                          </ImageView>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <Label fx:id="totalsubscribe" prefHeight="21.0" prefWidth="200.0" text="Total : 0$" />
+                                 </children>
+                                 <padding>
+                                    <Insets top="20.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                </Tab>
+                <Tab text="One Time Purchase">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="304.0" prefWidth="332.0">
+                           <children>
+                              <Button id="login_btn" fx:id="btn_cancel" disable="false" layoutX="230.0" layoutY="257.0" minHeight="25.951171875" mnemonicParsing="false" onMouseClicked="#cancel_click" prefHeight="34.0" prefWidth="86.0" style="-fx-border-color: #2A78FF; -fx-border-radius: 20;" stylesheets="@../style.css" text="Cancel" />
+                              <Button id="login_btn" fx:id="btn_purchase_onetime" disable="false" layoutX="95.0" layoutY="257.0" minHeight="25.951171875" mnemonicParsing="false" onMouseClicked="#btn_purchase_onetime_clicked" prefHeight="34.0" prefWidth="128.0" style="-fx-border-color: #2A78FF; -fx-border-radius: 20;" stylesheets="@../style.css" text="Confirm &amp; Pay" />
+                              <VBox id="VBox" alignment="TOP_CENTER" layoutX="-2.0" minHeight="127.0489501953125" prefHeight="203.0" prefWidth="340.0" style="">
+                                 <children>
+                                    <Label text="Credit Card" />
+                                    <Label fx:id="label_card2" text="**** **** **** 1234" />
+                                    <HBox maxWidth="-Infinity" prefHeight="-1.0" prefWidth="200.0" style="-fx-background-color: #EBE8F9;&#10;-fx-border-color: #a2a2a2;&#10;-fx-border-width: 2px 2px 2px 2px;&#10;-fx-focus-color: #d35244;&#10; -fx-faint-focus-color: #d3524422;" styleClass="null">
+                                       <children>
+                                          <PasswordField fx:id="txt_pass_download" promptText="Confirm Password" style="-fx-background-color: transparent;" />
+                                          <ImageView fitHeight="18.249900153702654" fitWidth="24.33319854736328" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../image/icons8-versions-48.png" />
+                                             </image>
+                                             <HBox.margin>
+                                                <Insets right="2.0" top="5.0" fx:id="x34" />
+                                             </HBox.margin>
+                                          </ImageView>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <Label fx:id="totalonetime" prefHeight="21.0" prefWidth="197.0" text="Total : 0$" />
+                                 </children>
+                                 <padding>
+                                    <Insets top="40.0" fx:id="x4" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

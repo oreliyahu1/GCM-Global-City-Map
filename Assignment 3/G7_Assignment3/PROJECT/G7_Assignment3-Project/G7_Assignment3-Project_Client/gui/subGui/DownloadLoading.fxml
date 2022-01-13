@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="125.0" prefWidth="283.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiControllers.subGui.DownloadLoadingController">
+   <children>
+      <ProgressBar fx:id="progrssbar" layoutX="18.0" layoutY="61.0" prefHeight="31.0" prefWidth="248.0" progress="0.0" />
+      <Label fx:id="txt_download" layoutX="80.0" layoutY="28.0" text="DOWNLOADING..." />
+   </children>
+</AnchorPane>

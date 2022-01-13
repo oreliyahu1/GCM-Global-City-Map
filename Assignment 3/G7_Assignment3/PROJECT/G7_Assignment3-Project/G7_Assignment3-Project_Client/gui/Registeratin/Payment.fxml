@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="710.0" prefWidth="788.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiControllers.Registeration.PaymentController">
+   <children>
+      <Pane id="Loginpane" fx:id="registerpane" prefHeight="710.0" prefWidth="803.0" style="-fx-background-color: #EBE8F9;&#10;">
+         <children>
+            <VBox id="VBox" alignment="TOP_CENTER" layoutX="116.0" layoutY="180.0" minHeight="127.0489501953125" prefHeight="458.0489501953125" prefWidth="257.0" style="">
+               <padding>
+                  <Insets top="100.0" fx:id="x4" />
+               </padding>
+               <children>
+                  <HBox maxWidth="-Infinity" prefHeight="-1.0" prefWidth="200.0" style="-fx-background-color: #EBE8F9;&#10;-fx-border-color: #a2a2a2;&#10;-fx-border-width: 2px 2px 2px 2px;" styleClass="null">
+                     <VBox.margin>
+                        <Insets top="140.0" fx:id="x8" />
+                     </VBox.margin>
+                     <children>
+                        <TextField fx:id="txt_cardnum" prefHeight="34.0" prefWidth="200.0" promptText="Credit Card Number" style="-fx-background-color: transparent;">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                        <ImageView fitHeight="18.249900153702654" fitWidth="24.33319854736328" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/icons8-user-male-26.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="2.0" top="5.0" fx:id="x3" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox maxWidth="-Infinity" prefHeight="-1.0" prefWidth="200.0" style="-fx-background-color: #EBE8F9;&#10;-fx-border-color: #a2a2a2;&#10;-fx-border-width: 2px 2px 2px 2px;" styleClass="null">
+                     <children>
+                        <TextField fx:id="txt_cvv" prefHeight="34.0" prefWidth="200.0" promptText="CVV" style="-fx-background-color: transparent;">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                        <ImageView fitHeight="18.249900153702654" fitWidth="24.33319854736328" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/icons8-user-male-26.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="2.0" top="5.0" fx:id="x31" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="TOP_CENTER" prefHeight="55.0" prefWidth="233.0">
+                     <children>
+                        <ComboBox fx:id="combo_month" prefHeight="31.0" prefWidth="101.0" promptText="Month" />
+                        <Separator orientation="VERTICAL" prefHeight="200.0" visible="false" />
+                        <ComboBox fx:id="combo_year" prefHeight="31.0" prefWidth="94.0" promptText="Year" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <ImageView fitHeight="139.0" fitWidth="139.0" layoutX="327.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-marker-96.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="62.9998779296875" fitWidth="62.9998779296875" layoutX="365.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-sleeping-in-bed-240.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="62.9998779296875" fitWidth="62.9998779296875" layoutX="276.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-shopping-bag-80.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="63.0" fitWidth="63.0" layoutX="559.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-carpark-80.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="63.0" fitWidth="63.0" layoutX="463.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image backgroundLoading="false" url="@../image/icons8-food-100.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="62.99999237060547" fitWidth="62.99999237060547" layoutX="181.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-fountain-100.png" />
+               </image>
+            </ImageView>
+            <Separator layoutX="393.0" layoutY="384.0" orientation="VERTICAL" prefHeight="230.0" style="-fx-background-color: #BDBBC3;&#10;" />
+            <Button id="login_btn" fx:id="btn_payment" layoutX="419.0" layoutY="495.0" minHeight="25.951171875" mnemonicParsing="false" onMouseClicked="#btn_signup" prefHeight="48.0" prefWidth="145.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20; -fx-background-color: transparent;" text="SIGN UP">
+               <stylesheets>
+                  <URL value="@../style.css" />
+               </stylesheets>
+            </Button>
+            <Circle layoutX="372.0" layoutY="651.0" radius="9.12493896484375" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);&#10;">
+               <fill>
+                  <Color blue="0.765" green="0.733" red="0.741" fx:id="x5" />
+               </fill>
+            </Circle>
+            <Circle fill="#bdd4f8" layoutX="418.0" layoutY="650.0" radius="9.12493896484375" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" />
+            <Label fx:id="client_title" layoutX="419.0" layoutY="384.0" text="Welcome, " wrapText="false">
+               <font>
+                  <Font size="20.0" fx:id="x7" />
+               </font>
+            </Label>
+            <Label layoutX="419.0" layoutY="424.0" text="To FINISH Registeration" wrapText="false">
+               <font>
+                  <Font size="17.0" fx:id="x6" />
+               </font>
+            </Label>
+            <Label font="$x6" layoutX="419.0" layoutY="456.0" text="Firstly, Fill Payment Method" wrapText="false" />
+         </children>
+         <stylesheets>
+            <URL value="@../style.css" />
+         </stylesheets>
+      </Pane>
+   </children>
+</AnchorPane>

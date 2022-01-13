@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="415.0" prefWidth="608.0" style="-fx-effect: innershadow(gaussian, #039ed3, 2, 1.0, 0, 0);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiControllers.CatalogEdit.Edit_Tour_Controller">
+   <children>
+      <Pane prefHeight="415.0" prefWidth="295.0" style="-fx-background-color: #BDBBC3;">
+         <children>
+            <Label fx:id="label" layoutX="108.0" layoutY="73.0" text="Edit Tour" wrapText="false">
+               <font>
+                  <Font size="20.0" fx:id="x71" />
+               </font>
+            </Label>
+            <ImageView fitHeight="139.0" fitWidth="139.0" layoutX="78.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-marker-96.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="pnlOverview" layoutX="295.0" prefHeight="415.0" prefWidth="356.0" style="-fx-background-color: #EBE8F9;&#10;">
+         <children>
+            <HBox layoutX="31.0" layoutY="89.0" maxWidth="-Infinity" prefHeight="38.0" prefWidth="282.0" style="-fx-background-color: #EBE8F9;&#10;-fx-border-color: #a2a2a2;&#10;-fx-border-width: 2px 2px 2px 2px;&#10;-fx-focus-color: #d35244;&#10; -fx-faint-focus-color: #d3524422;" styleClass="null">
+               <children>
+                  <TextField fx:id="txt_name" prefHeight="34.0" prefWidth="252.0" promptText="Name" style="-fx-background-color: transparent;&#10;">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </TextField>
+                  <ImageView fitHeight="18.249900153702654" fitWidth="24.33319854736328" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8-city-buildings-50.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="2.0" top="5.0" fx:id="x3" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox layoutX="31.0" layoutY="142.0" maxWidth="-Infinity" prefHeight="38.0" prefWidth="282.0" style="-fx-background-color: #EBE8F9;&#10;-fx-border-color: #a2a2a2;&#10;-fx-border-width: 2px 2px 2px 2px;&#10;-fx-focus-color: #d35244;&#10; -fx-faint-focus-color: #d3524422;" styleClass="null">
+               <children>
+                  <TextField fx:id="txt_desc" prefHeight="34.0" prefWidth="253.0" promptText="Description" style="-fx-background-color: transparent;&#10;">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </TextField>
+                  <ImageView fitHeight="18.249900153702654" fitWidth="24.33319854736328" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8-versions-48.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="2.0" top="5.0" fx:id="x34" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <CheckBox fx:id="checkbox_recommended" layoutX="35.0" layoutY="197.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="198.0" text="Recommended Tour?" />
+            <Button id="login_btn" fx:id="btn_cancel" disable="false" layoutX="256.0" layoutY="367.0" minHeight="25.951171875" mnemonicParsing="false" onMouseClicked="#btn_cancel_click" prefHeight="34.0" prefWidth="86.0" style="-fx-border-color: #2A78FF; -fx-border-radius: 20;" stylesheets="@../style.css" text="Cancel" />
+            <Button id="login_btn" fx:id="btn_edit" disable="false" layoutX="79.0" layoutY="367.0" minHeight="25.951171875" mnemonicParsing="false" onMouseClicked="#btn_edit_tour_click" prefHeight="34.0" prefWidth="167.0" style="-fx-border-color: #2A78FF; -fx-border-radius: 20;" stylesheets="@../style.css" text="Edit Tour" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

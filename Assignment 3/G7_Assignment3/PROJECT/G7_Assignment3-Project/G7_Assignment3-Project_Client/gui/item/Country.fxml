@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane prefHeight="92.0" prefWidth="710.0" style="-fx-background-color: #EBE8F9; -fx-background-radius: 5; -fx-background-insets: 0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiControllers.subGui.countryC">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Pane layoutX="0.0" layoutY="0.0" prefHeight="92.0" prefWidth="710.0" style="&#10;    -fx-border-color: #BDBBC3">
+      <children>
+        <Label fx:id="country_name" layoutX="70.0" layoutY="25.0" text="Israel" />
+        <Label layoutX="280.0" layoutY="25.0" text="20" />
+        <ImageView fx:id="flag" fitHeight="31.0" fitWidth="25.0" layoutX="14.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" smooth="true" />
+        <Line endX="380.0" layoutX="188.0" layoutY="51.0" startX="-120.0" stroke="#bdbbc3" translateY="3.0" />
+        <ImageView fx:id="img" fitHeight="74.86678314208984" fitWidth="112.34029234142193" layoutX="591.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);&#10;    -fx-stroke-width: 2.0;&#10;    -fx-border-radius: 20 20 20 20;&#10;    -fx-background-radius: 10 10 10 10;&#10;    -fx-padding: 10;&#10;    -fx-background-color: firebrick;">
+          <image>
+            <Image url="@image/philippines-weather.jpg" />
+          </image>
+        </ImageView>
+        <Label layoutX="380.0" layoutY="25.0" text="20" />
+        <Label layoutX="68.0" layoutY="60.0" text="Israel, is a country in Western Asia, located on the southeastern..." textAlignment="LEFT" textOverrun="ELLIPSIS" wrapText="false" />
+            <Label layoutX="180.0" layoutY="25.0" text="20" />
+            <Label layoutX="520.0" layoutY="25.0" text="20" />
+      </children>
+      <stylesheets>
+        <URL value="@style.css" />
+      </stylesheets>
+    </Pane>
+  </children>
+  <stylesheets>
+    <URL value="@style.css" />
+  </stylesheets>
+</AnchorPane>

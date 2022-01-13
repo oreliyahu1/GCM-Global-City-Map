@@ -1,0 +1,64 @@
+.button
+{
+-fx-background-color : #EBE8F9;
+-fx-text-fill : #000000;
+-fx-background-radius: 20px, 20px, 20px, 20px;
+-fx-background-insets: 0 0 -1 0, 0, 1, 2;
+
+}
+.button:hover{
+
+ 	-fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, white;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 20px, 20px, 20px, 20px;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em; /* 4 8 4 8 */
+    -fx-text-fill: -fx-text-base-color;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+}
+.button:pressed
+{
+-fx-background-color : #EBE8F9;
+
+}
+.popup {
+    -fx-background-color: cornsilk;
+    -fx-padding: 10;
+    -fx-border-color: black; 
+    -fx-border-width: 5;
+    -fx-font-size: 16;
+}
+
+.scroll-pane {
+    -fx-background-color: #EBE8F9;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:#EBE8F9;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: #EBE8F9;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #BDBBC3;
+    -fx-background-radius: 5em;
+}
+.pane {
+    -fx-border-color: black;
+}
+
+
+.scroll-pane > .corner {
+    -fx-background-color: #EBE8F9;
+}

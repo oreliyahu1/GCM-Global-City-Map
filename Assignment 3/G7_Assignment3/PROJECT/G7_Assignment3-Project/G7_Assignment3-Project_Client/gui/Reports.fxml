@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="680.0" prefWidth="793.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiControllers.Reports_Controller">
+   <children>
+      <Pane fx:id="pnlOverview" layoutX="-6.0" prefHeight="690.0" prefWidth="809.0" style="-fx-background-color: #EBE8F9;&#10;">
+         <children>
+            <DatePicker fx:id="datefrom" layoutX="17.0" layoutY="36.0" onAction="#combofrom_change" prefHeight="31.0" prefWidth="150.0" promptText="From" />
+            <DatePicker fx:id="dateto" layoutX="175.0" layoutY="36.0" onAction="#comboto_change" prefHeight="31.0" prefWidth="150.0" promptText="To" />
+            <ComboBox fx:id="combo_city" layoutX="175.0" layoutY="72.0" prefHeight="31.0" prefWidth="150.0" promptText="City" />
+            <ComboBox fx:id="combo_country" layoutX="17.0" layoutY="72.0" prefHeight="31.0" prefWidth="150.0" promptText="Country" />
+            <Button id="login_btn" fx:id="btn_report" disable="false" layoutX="335.0" layoutY="35.0" minHeight="25.951171875" mnemonicParsing="false" onMouseClicked="#btn_search_clicked" prefHeight="33.0" prefWidth="93.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20;" text="Search">
+               <stylesheets>
+                  <URL value="@style.css" />
+               </stylesheets>
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/icons8-google-web-search-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button id="login_btn" fx:id="btn_create" disable="false" layoutX="434.0" layoutY="35.0" minHeight="25.951171875" mnemonicParsing="false" onMouseClicked="#btn_create_click" prefHeight="33.0" prefWidth="93.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20;" text="Save">
+               <stylesheets>
+                  <URL value="@style.css" />
+               </stylesheets>
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/icons8-google-blog-search-100.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Pane fx:id="report_panee" layoutX="17.0" layoutY="106.0" prefHeight="531.0" prefWidth="794.0" />
+            <CheckBox fx:id="checkbox_all" disable="true" layoutX="17.0" layoutY="7.0" mnemonicParsing="false" onAction="#onChange" text="All Cities" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

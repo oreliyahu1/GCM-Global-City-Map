@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="455.0" prefWidth="997.0" style="-fx-effect: innershadow(gaussian, #039ed3, 2, 1.0, 0, 0);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiControllers.CatalogEdit.AddPlaceToMapController">
+   <children>
+      <Pane prefHeight="455.0" prefWidth="221.0" style="-fx-background-color: #BDBBC3;">
+         <children>
+            <Label layoutX="18.0" layoutY="66.0" text="Add Place of Interest" wrapText="false">
+               <font>
+                  <Font size="20.0" fx:id="x71" />
+               </font>
+            </Label>
+            <ImageView fitHeight="139.0" fitWidth="139.0" layoutX="40.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-marker-96.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="pnlOverview" layoutX="219.0" prefHeight="455.0" prefWidth="780.0" style="-fx-background-color: #EBE8F9;&#10;">
+         <children>
+            <HBox alignment="CENTER_LEFT" layoutX="15.0" layoutY="60.0" prefHeight="42.0" prefWidth="738.0" spacing="80.0" style="-fx-background-color: #BDBBC3;&#10;&#10;">
+               <children>
+                  <Label text="#" textFill="BLACK">
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label text="Name" textFill="BLACK">
+                     <HBox.margin>
+                        <Insets right="60.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label text="Accessable" textFill="BLACK" />
+                  <Label text="Category" textFill="BLACK" />
+               </children>
+            </HBox>
+            <ScrollPane hbarPolicy="NEVER" layoutX="23.0" layoutY="119.0" prefHeight="308.0" prefWidth="721.0" style="-fx-background-color: #EBE8F9;" vbarPolicy="ALWAYS">
+               <content>
+                  <VBox fx:id="pnItems" prefHeight="314.0" prefWidth="719.0" spacing="5.0" style="-fx-background-color: #EBE8F9;&#10;">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+               </content>
+               <stylesheets>
+                  <URL value="@style.css" />
+               </stylesheets>
+            </ScrollPane>
+            <Label fx:id="txt_Location" layoutX="15.0" layoutY="22.0" text="Location Selected: " />
+            <ImageView fx:id="btn_exit" fitHeight="31.0" fitWidth="31.0" layoutX="738.0" layoutY="7.0" onMousePressed="#exit_all" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-cancel-64.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

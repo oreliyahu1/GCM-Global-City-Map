@@ -1,0 +1,83 @@
+city,short,collectionVer,index,descTour,poi,tour,secTime,recommended
+Haifa,il,0.0,1,,Dan Carmel Haifa Hotel,Hotel Tour,0,1
+Haifa,il,2.2,1,,Dan Carmel Haifa Hotel,Hotel Tour,0,1
+Haifa,il,0.0,2,,Dan Panorama Haifa Hotel,Hotel Tour,0,1
+Haifa,il,2.2,2,,Dan Panorama Haifa Hotel,Hotel Tour,0,1
+Haifa,il,0.0,4,,McDonalds,Museum Tour,0,1
+Haifa,il,2.2,4,,McDonalds,Museum Tour,0,1
+Haifa,il,0.0,3,,Sculptures Garden,Cultur Tour,0,0
+Haifa,il,2.2,3,,Sculptures Garden,Cultur Tour,0,0
+Haifa,il,0.0,4,,Shawarma Sabbah,Cultur Tour,0,0
+Haifa,il,2.2,4,,Shawarma Sabbah,Cultur Tour,0,0
+Haifa,il,0.0,1,,Shrine of the Bb,Cultur Tour,0,0
+Haifa,il,2.2,1,,Shrine of the Bb,Cultur Tour,0,0
+Haifa,il,0.0,2,,The Moshe Stekelis pehistoric Museum,Cultur Tour,0,0
+Haifa,il,2.2,2,,The Moshe Stekelis pehistoric Museum,Cultur Tour,0,0
+Haifa,il,0.0,1,,The Museum of Modern Art,Museum Tour,0,1
+Haifa,il,2.2,1,,The Museum of Modern Art,Museum Tour,0,1
+Haifa,il,0.0,2,,The Museum of Music and Ethnology,Museum Tour,0,1
+Haifa,il,2.2,2,,The Museum of Music and Ethnology,Museum Tour,0,1
+Haifa,il,0.0,3,,The National Maritime Museum,Museum Tour,0,1
+Haifa,il,2.2,3,,The National Maritime Museum,Museum Tour,0,1
+Jerusalem,il,0.0,1,A big tour in the wonderful city of jerusalem. you are going to stay in Abraham Hostel hotel for the duration of the tour.Then we are visiting to the jerusalem centre after that we are going to Pottery class and finish the day at the theatre.,Abraham Hostel Jerusalem,City Tour,259200,1
+Jerusalem,il,2.2,1,A big tour in the wonderful city of jerusalem. you are going to stay in Abraham Hostel hotel for the duration of the tour.Then we are visiting to the jerusalem centre after that we are going to Pottery class and finish the day at the theatre.,Abraham Hostel Jerusalem,City Tour,259200,1
+Jerusalem,il,0.0,2,A big tour in the wonderful city of jerusalem. you are going to stay in Abraham Hostel hotel for the duration of the tour.Then we are visiting to the jerusalem centre after that we are going to Pottery class and finish the day at the theatre.,Jerusalem Centre for Public Affairs,City Tour,7200,1
+Jerusalem,il,2.2,2,A big tour in the wonderful city of jerusalem. you are going to stay in Abraham Hostel hotel for the duration of the tour.Then we are visiting to the jerusalem centre after that we are going to Pottery class and finish the day at the theatre.,Jerusalem Centre for Public Affairs,City Tour,7200,1
+Jerusalem,il,0.0,3,A big tour in the wonderful city of jerusalem. you are going to stay in Abraham Hostel hotel for the duration of the tour.Then we are visiting to the jerusalem centre after that we are going to Pottery class and finish the day at the theatre.,Jerusalem Pottery Hagop Karakashian,City Tour,12600,1
+Jerusalem,il,2.2,3,A big tour in the wonderful city of jerusalem. you are going to stay in Abraham Hostel hotel for the duration of the tour.Then we are visiting to the jerusalem centre after that we are going to Pottery class and finish the day at the theatre.,Jerusalem Pottery Hagop Karakashian,City Tour,12600,1
+Jerusalem,il,0.0,4,A big tour in the wonderful city of jerusalem. you are going to stay in Abraham Hostel hotel for the duration of the tour.Then we are visiting to the jerusalem centre after that we are going to Pottery class and finish the day at the theatre.,Jerusalem Theatre,City Tour,7200,1
+Jerusalem,il,2.2,4,A big tour in the wonderful city of jerusalem. you are going to stay in Abraham Hostel hotel for the duration of the tour.Then we are visiting to the jerusalem centre after that we are going to Pottery class and finish the day at the theatre.,Jerusalem Theatre,City Tour,7200,1
+Jerusalem,il,0.0,1,Food Tour at jerusalem finest restaurants. we are staying at Leonardo Hotel and will be visiting restuarents all over the city plus a movie at Lev Smadar Cinema,Leonardo Jerusalem Hotel,Food Tour,172800,1
+Jerusalem,il,2.2,1,Food Tour at jerusalem finest restaurants. we are staying at Leonardo Hotel and will be visiting restuarents all over the city plus a movie at Lev Smadar Cinema,Leonardo Jerusalem Hotel,Food Tour,172800,1
+Jerusalem,il,0.0,3,Food Tour at jerusalem finest restaurants. we are staying at Leonardo Hotel and will be visiting restuarents all over the city plus a movie at Lev Smadar Cinema,Lev Smadar,Food Tour,12600,1
+Jerusalem,il,2.2,3,Food Tour at jerusalem finest restaurants. we are staying at Leonardo Hotel and will be visiting restuarents all over the city plus a movie at Lev Smadar Cinema,Lev Smadar,Food Tour,12600,1
+Jerusalem,il,0.0,2,Food Tour at jerusalem finest restaurants. we are staying at Leonardo Hotel and will be visiting restuarents all over the city plus a movie at Lev Smadar Cinema,Machne yehuda Restaurant,Food Tour,7200,1
+Jerusalem,il,2.2,2,Food Tour at jerusalem finest restaurants. we are staying at Leonardo Hotel and will be visiting restuarents all over the city plus a movie at Lev Smadar Cinema,Machne yehuda Restaurant,Food Tour,7200,1
+Jerusalem,il,0.0,4,Food Tour at jerusalem finest restaurants. we are staying at Leonardo Hotel and will be visiting restuarents all over the city plus a movie at Lev Smadar Cinema,McDonald's Kosher,Food Tour,3600,1
+Jerusalem,il,0.0,3,Travel in the parks of jerusalem. eat in McDonals's Kosher resturant and finish the day with a movie in the Yes Planet Cinema,McDonald's Kosher,Park Tour ,5400,1
+Jerusalem,il,2.2,4,Food Tour at jerusalem finest restaurants. we are staying at Leonardo Hotel and will be visiting restuarents all over the city plus a movie at Lev Smadar Cinema,McDonald's Kosher,Food Tour,3600,1
+Jerusalem,il,2.2,3,Travel in the parks of jerusalem. eat in McDonals's Kosher resturant and finish the day with a movie in the Yes Planet Cinema,McDonald's Kosher,Park Tour ,5400,1
+Jerusalem,il,0.0,1,Travel in the parks of jerusalem. eat in McDonals's Kosher resturant and finish the day with a movie in the Yes Planet Cinema,Park Jerusalem ,Park Tour ,3600,1
+Jerusalem,il,2.2,1,Travel in the parks of jerusalem. eat in McDonals's Kosher resturant and finish the day with a movie in the Yes Planet Cinema,Park Jerusalem ,Park Tour ,3600,1
+Jerusalem,il,0.0,2,Travel in the parks of jerusalem. eat in McDonals's Kosher resturant and finish the day with a movie in the Yes Planet Cinema,Sacher Park,Park Tour ,3600,1
+Jerusalem,il,2.2,2,Travel in the parks of jerusalem. eat in McDonals's Kosher resturant and finish the day with a movie in the Yes Planet Cinema,Sacher Park,Park Tour ,3600,1
+Jerusalem,il,0.0,5,A big tour in the wonderful city of jerusalem. you are going to stay in Abraham Hostel hotel for the duration of the tour.Then we are visiting to the jerusalem centre after that we are going to Pottery class and finish the day at the theatre.,Tala Humus and Falafel,City Tour,3600,1
+Jerusalem,il,0.0,5,Food Tour at jerusalem finest restaurants. we are staying at Leonardo Hotel and will be visiting restuarents all over the city plus a movie at Lev Smadar Cinema,Tala Humus and Falafel,Food Tour,3600,1
+Jerusalem,il,2.2,5,A big tour in the wonderful city of jerusalem. you are going to stay in Abraham Hostel hotel for the duration of the tour.Then we are visiting to the jerusalem centre after that we are going to Pottery class and finish the day at the theatre.,Tala Humus and Falafel,City Tour,3600,1
+Jerusalem,il,2.2,5,Food Tour at jerusalem finest restaurants. we are staying at Leonardo Hotel and will be visiting restuarents all over the city plus a movie at Lev Smadar Cinema,Tala Humus and Falafel,Food Tour,3600,1
+Jerusalem,il,0.0,7,A big tour in the wonderful city of jerusalem. you are going to stay in Abraham Hostel hotel for the duration of the tour.Then we are visiting to the jerusalem centre after that we are going to Pottery class and finish the day at the theatre.,The Israel Museum,City Tour,12600,1
+Jerusalem,il,2.2,7,A big tour in the wonderful city of jerusalem. you are going to stay in Abraham Hostel hotel for the duration of the tour.Then we are visiting to the jerusalem centre after that we are going to Pottery class and finish the day at the theatre.,The Israel Museum,City Tour,12600,1
+Jerusalem,il,0.0,6,A big tour in the wonderful city of jerusalem. you are going to stay in Abraham Hostel hotel for the duration of the tour.Then we are visiting to the jerusalem centre after that we are going to Pottery class and finish the day at the theatre.,The Jerusalem Gift Shop,City Tour,5400,1
+Jerusalem,il,2.2,6,A big tour in the wonderful city of jerusalem. you are going to stay in Abraham Hostel hotel for the duration of the tour.Then we are visiting to the jerusalem centre after that we are going to Pottery class and finish the day at the theatre.,The Jerusalem Gift Shop,City Tour,5400,1
+Jerusalem,il,0.0,4,Travel in the parks of jerusalem. eat in McDonals's Kosher resturant and finish the day with a movie in the Yes Planet Cinema,Yes Planet,Park Tour ,7200,1
+Jerusalem,il,2.2,4,Travel in the parks of jerusalem. eat in McDonals's Kosher resturant and finish the day with a movie in the Yes Planet Cinema,Yes Planet,Park Tour ,7200,1
+Tel-aviv,il,0.0,1,Musuem Tour accros all of tel-aviv as well as visiting Ben-gurion House historic site,Ben-Gurion House,Muesuem Tour,5400,0
+Tel-aviv,il,0.0,1,Shooping/Fun tour-we stay at Dan Hotel we go to Lous Vuitton Shop after that we eat and go to the club at night,Dan Tel Aviv Hotel,Shooping/Fun Tour,172800,0
+Tel-aviv,il,0.0,3,Shooping/Fun tour-we stay at Dan Hotel we go to Lous Vuitton Shop after that we eat and go to the club at night,Hakosem,Shooping/Fun Tour,5400,0
+Tel-aviv,il,0.0,2,Musuem Tour accros all of tel-aviv as well as visiting Ben-gurion House historic site,Ilana Goor Museum,Muesuem Tour,10800,0
+Tel-aviv,il,0.0,3,Musuem Tour accros all of tel-aviv as well as visiting Ben-gurion House historic site,Israel Defense Forces History Museum,Muesuem Tour,10800,0
+Tel-aviv,il,0.0,1,Food Tour-We Visit at 3 of the best restaurants in the city and finish the tour with a movie,Kukiza,Food Tour,7200,0
+Tel-aviv,il,0.0,2,Shooping/Fun tour-we stay at Dan Hotel we go to Lous Vuitton Shop after that we eat and go to the club at night,Louis Vuitton,Shooping/Fun Tour,10800,0
+Tel-aviv,il,0.0,2,Food Tour-We Visit at 3 of the best restaurants in the city and finish the tour with a movie,Mashya,Food Tour,7200,0
+Tel-aviv,il,0.0,4,Musuem Tour accros all of tel-aviv as well as visiting Ben-gurion House historic site,Museum of the Jewish People at Beit Hatfutsot,Muesuem Tour,7200,0
+Tel-aviv,il,0.0,4,Food Tour-We Visit at 3 of the best restaurants in the city and finish the tour with a movie,Muvix Concept,Food Tour,9000,0
+Tel-aviv,il,0.0,3,Food Tour-We Visit at 3 of the best restaurants in the city and finish the tour with a movie,Salva vida,Food Tour,7200,0
+Tel-aviv,il,0.0,5,Musuem Tour accros all of tel-aviv as well as visiting Ben-gurion House historic site,Tel Aviv Museum of Art,Muesuem Tour,9000,0
+Tel-aviv,il,0.0,4,Shooping/Fun tour-we stay at Dan Hotel we go to Lous Vuitton Shop after that we eat and go to the club at night,The Block,Shooping/Fun Tour,14400,0
+Okazaki,jp,0.0,1,A tour that goes through all of Okazaki's stores ,Bizenya,Stores Tour,2700,0
+Okazaki,jp,0.0,1,A tour that goes through all the Okazaki's hotels ,Kyoto Travellers Inn,Hotels Tour,7500,1
+Okazaki,jp,0.0,3,A tour that goes through all the Okazaki's hotels ,Machiya Kyoto Shogoin,Hotels Tour,10800,1
+Okazaki,jp,0.0,1,A tour that goes through all of Okazaki'z restaurant,Marugen Ramen Okazaki Hane Branch,Restaurants Tour,2400,1
+Okazaki,jp,0.0,2,A tour that goes through all of Okazaki's stores ,Miso Factory,Stores Tour,3600,0
+Okazaki,jp,0.0,2,A tour that goes through all of Okazaki'z restaurant,Namuchai Okazaki,Restaurants Tour,1200,1
+Okazaki,jp,0.0,3,A tour that goes through all of Okazaki'z restaurant,Shubhakamana,Restaurants Tour,4500,1
+Okazaki,jp,0.0,4,A tour that goes through all of Okazaki'z restaurant,Tartaruga,Restaurants Tour,3000,1
+Okazaki,jp,0.0,2,A tour that goes through all the Okazaki's hotels ,The Westin Miyako Hotel Kyoto ,Hotels Tour,7200,1
+Tokyo,jp,0.0,1,A tour that goes through all of Tokyo's restaurants,Arva by Aman Tokyo,Restaurants Tour,8400,1
+Tokyo,jp,0.0,2,A tour that goes through all of Tokyo's restaurants,Hakushu Teppanyaki,Restaurants Tour,2100,1
+Tokyo,jp,0.0,3,A tour that goes through all of Tokyo's restaurants,Narisawa,Restaurants Tour,4200,1
+Tokyo,jp,0.0,3,A tour that goes through all of Tokyo's parks,Rinshi-no-mori Park,Parks Tour,4800,0
+Tokyo,jp,0.0,2,A tour that goes through all of Tokyo's parks,Shinjuku Gyoen National Garden,Parks Tour,12300,0
+Tokyo,jp,0.0,4,A tour that goes through all of Tokyo's restaurants,Tapas Molecular Bar,Restaurants Tour,3300,1
+Tokyo,jp,0.0,1,A tour that goes through all of Tokyo's cinemas,TOHO Cinemas Shinjuku,Cinemas Tour,9900,1
+Tokyo,jp,0.0,1,A tour that goes through all of Tokyo's parks,Yoyogi Park,Parks Tour,4800,0

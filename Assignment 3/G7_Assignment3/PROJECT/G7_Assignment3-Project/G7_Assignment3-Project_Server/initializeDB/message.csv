@@ -1,0 +1,13 @@
+date,read,subject,from,id,to,message
+2016-06-17 20:59:00,0,subject1,arik123,1,haia,message from arik123 to haia
+2016-06-18 20:59:00,0,subject2,haia,2,samiGUI,message from haia to samiGUI
+2016-07-17 20:59:00,1,subject3,oreliyahu,3,haia,message from oreliyahu to haia
+2016-08-17 20:59:00,1,subject4,samiGUI,4,arik123,message from samiGUI to arik123
+2017-06-17 20:59:00,0,subject5,arik123,5,samiGUI,message from arik123 to samiGUI
+2017-08-17 20:59:00,1,subject6,haia,6,oreliyahu,message from haia to oreliyahu
+2017-09-12 20:59:00,1,subject7,oreliyahu,7,samiGUI,message from oreliyahu to samiGUI
+2017-10-13 20:59:00,0,subject8,samiGUI,8,haia,message from samiGUI to haia
+2018-06-17 20:59:00,0,subject9,arik123,9,samiGUI,message from arik123 to samiGUI
+2018-06-20 20:59:00,0,subject10,haia,10,oreliyahu,message from haia to oreliyahu
+2019-06-10 20:59:00,0,subject11,oreliyahu,11,arik123,message from oreliyahu to arik123
+2019-06-15 20:59:00,1,subject12,samiGUI,12,haia,message from samiGUI to haia

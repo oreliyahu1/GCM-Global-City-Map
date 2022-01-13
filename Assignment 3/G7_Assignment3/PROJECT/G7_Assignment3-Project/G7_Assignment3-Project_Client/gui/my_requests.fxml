@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="680.0" prefWidth="793.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiControllers.Manage_RequestsController">
+   <children>
+      <Pane fx:id="pnlOverview" layoutX="-6.0" prefHeight="690.0" prefWidth="809.0" style="-fx-background-color: #EBE8F9;&#10;">
+         <children>
+            <SplitPane dividerPositions="0.5276162790697675" layoutX="7.0" layoutY="-2.0" orientation="VERTICAL" prefHeight="631.0" prefWidth="803.0" style="-fx-background-color: #EBE8F9;">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #EBE8F9;">
+                     <children>
+                        <ScrollPane hbarPolicy="NEVER" layoutX="28.0" layoutY="78.0" prefHeight="480.0" prefWidth="746.0" style="-fx-background-color: #EBE8F9;" vbarPolicy="ALWAYS">
+                           <content>
+                              <VBox fx:id="pnItems" prefHeight="481.0" prefWidth="744.0" spacing="5.0" style="-fx-background-color: #EBE8F9;&#10;">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </VBox>
+                           </content>
+                           <stylesheets>
+                              <URL value="@style.css" />
+                           </stylesheets>
+                        </ScrollPane>
+                        <Pane layoutX="28.0" layoutY="22.0" prefHeight="42.0" prefWidth="738.0" style="-fx-background-color: #BDBBC3;">
+                           <children>
+                              <Label layoutX="192.0" layoutY="13.0" text="City" textFill="BLACK" />
+                              <Label layoutX="56.0" layoutY="13.0" text="Conutry" textFill="BLACK" />
+                              <Label layoutX="309.0" layoutY="13.0" text="Date" textFill="BLACK" />
+                              <Label layoutX="419.0" layoutY="13.0" text="Version" textFill="BLACK" />
+                              <Label layoutX="518.0" layoutY="13.0" text="Status" textFill="BLACK" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #EBE8F9;">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" layoutX="28.0" layoutY="29.0" prefHeight="42.0" prefWidth="738.0" spacing="80.0" style="-fx-background-color: #BDBBC3;&#10;&#10;">
+                           <children>
+                              <Label text="Type">
+                                 <HBox.margin>
+                                    <Insets left="50.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label text="Days" />
+                              <Label text="Price" textFill="BLACK" />
+                              <Label text="Date" textFill="BLACK" />
+                              <Label text="Status" textFill="BLACK" />
+                           </children>
+                        </HBox>
+                        <ScrollPane hbarPolicy="NEVER" layoutX="28.0" layoutY="86.0" prefHeight="525.0" prefWidth="746.0" style="-fx-background-color: #EBE8F9;" vbarPolicy="ALWAYS">
+                           <content>
+                              <VBox fx:id="pnItems1" prefHeight="525.0" prefWidth="744.0" spacing="5.0" style="-fx-background-color: #EBE8F9;&#10;">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </VBox>
+                           </content>
+                           <stylesheets>
+                              <URL value="@style.css" />
+                           </stylesheets>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

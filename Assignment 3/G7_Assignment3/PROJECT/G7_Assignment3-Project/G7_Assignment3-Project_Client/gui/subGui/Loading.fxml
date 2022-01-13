@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="73.0" prefWidth="710.0" style="-fx-background-color: #EBE8F9; -fx-background-radius: 5; -fx-background-insets: 0;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="guiControllers.item.Loading">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Pane layoutX="0.0" layoutY="0.0" prefHeight="73.0" prefWidth="710.0" style="&#10;    -fx-border-color: #BDBBC3">
+      <children>
+        <Label fx:id="country_name" layoutX="84.0" layoutY="23.0" text="Loading, Please wait..." />
+        <Circle fx:id="circle1" layoutX="39.0" layoutY="33.0" radius="24.5" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="MITER" strokeType="INSIDE" strokeWidth="2.0" style="-fx-stroke-dash-array:40">
+          <fill>
+            <Color blue="0.976" green="0.910" red="0.922" fx:id="x1" />
+          </fill>
+        </Circle>
+        <Circle fx:id="circle2" fill="$x1" layoutX="39.0" layoutY="33.0" radius="14.25" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.0" style="-fx-stroke-dash-array:20" />
+      </children>
+      <stylesheets>
+        <URL value="@style.css" />
+      </stylesheets>
+    </Pane>
+  </children>
+  <stylesheets>
+    <URL value="@style.css" />
+  </stylesheets>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="282.0" prefWidth="803.0" style="-fx-effect: innershadow(gaussian, #039ed3, 2, 1.0, 0, 0);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiControllers.CatalogEdit.AddMap_Controller">
+   <children>
+      <Pane fx:id="pnlOverview" prefHeight="348.0" prefWidth="803.0" style="-fx-background-color: #EBE8F9;&#10;">
+         <children>
+            <HBox alignment="CENTER_LEFT" layoutX="24.0" layoutY="14.0" prefHeight="42.0" prefWidth="746.0" spacing="80.0" style="-fx-background-color: #BDBBC3;&#10;&#10;">
+               <children>
+                  <Label text="Name" textFill="BLACK">
+                     <HBox.margin>
+                        <Insets left="70.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label text="Version" textFill="BLACK" />
+               </children>
+            </HBox>
+            <ScrollPane hbarPolicy="NEVER" layoutX="24.0" layoutY="58.0" prefHeight="256.0" prefWidth="746.0" style="-fx-background-color: #EBE8F9;" vbarPolicy="ALWAYS">
+               <content>
+                  <VBox fx:id="pnItems" prefHeight="259.0" prefWidth="744.0" spacing="5.0" style="-fx-background-color: #EBE8F9;&#10;" stylesheets="@style.css">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+               </content>
+               <stylesheets>
+                  <URL value="@style.css" />
+               </stylesheets>
+            </ScrollPane>
+            <ImageView fx:id="btn_exit" fitHeight="31.0" fitWidth="31.0" layoutX="770.0" layoutY="9.0" onMousePressed="#exit_all" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-cancel-64.png" />
+               </image>
+            </ImageView>
+
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="430.0" prefWidth="803.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiControllers.TutorialController">
+   <children>
+      <Pane prefHeight="536.0" prefWidth="803.0" style="-fx-background-color: #EBE8F9;&#10;">
+         <children>
+            <Button id="login_btn" disable="false" layoutX="293.0" layoutY="480.0" minHeight="25.951171875" mnemonicParsing="false" onMouseClicked="#next_button" prefHeight="42.0" prefWidth="100.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20; -fx-background-color: transparent;" text="Next">
+               <stylesheets>
+                  <URL value="@style.css" />
+               </stylesheets>
+            </Button>
+            <Button id="login_btn" fx:id="skip_button_b" disable="false" layoutX="411.0" layoutY="480.0" minHeight="25.951171875" mnemonicParsing="false" onMouseClicked="#skip_button" prefHeight="42.0" prefWidth="100.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20; -fx-background-color: transparent;" text="Skip">
+               <stylesheets>
+                  <URL value="@style.css" />
+               </stylesheets>
+            </Button>
+            <Circle fx:id="circle2" layoutX="402.0" layoutY="451.0" radius="9.12493896484375" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);&#10;">
+               <fill>
+                  <Color blue="0.765" green="0.733" red="0.741" fx:id="x5" />
+               </fill>
+            </Circle>
+            <Circle fx:id="circle1" fill="#bdd4f8" layoutX="356.0" layoutY="451.0" radius="9.12493896484375" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);&#10;" />
+            <Circle fx:id="circle3" layoutX="443.0" layoutY="450.0" radius="9.12493896484375" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);&#10;">
+               <fill>
+                  <Color blue="0.765" green="0.733" red="0.741" />
+               </fill>
+            </Circle>
+            <Pane layoutX="15.0" layoutY="13.0" prefHeight="410.0" prefWidth="771.0" style="-fx-background-color: #BDBBC3;">
+               <children>
+                  <Label layoutX="255.0" layoutY="14.0" text="Welcome To GCM Tutorial" textFill="BLACK">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="59.0" fitWidth="58.0" layoutX="14.0" layoutY="171.0" onMouseClicked="#back_arrow" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/icons8-go-back-128.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="next_arrow_button" fitHeight="59.0" fitWidth="58.0" layoutX="699.0" layoutY="165.0" onMouseClicked="#next_arrow" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/icons8-circled-right-64.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="image1" fitHeight="339.0" fitWidth="608.0" layoutX="82.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/tut.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="image2" fitHeight="339.0" fitWidth="608.0" layoutX="82.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@image/tut2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="image3" fitHeight="339.0" fitWidth="608.0" layoutX="92.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@image/tut.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

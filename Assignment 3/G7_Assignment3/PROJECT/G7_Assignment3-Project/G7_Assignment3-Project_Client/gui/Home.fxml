@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="All_panes" prefHeight="500.0" style="-fx-background-color: #BDBBC3;&#10;&#10;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiControllers.HomeController">
+  <children>
+      <HBox layoutX="256.0" prefHeight="680.0" prefWidth="832.0">
+         <children>
+            <VBox prefHeight="680.0" prefWidth="846.0">
+               <children>
+                  <Pane fx:id="PANE_background1" prefHeight="95.0" prefWidth="799.0" style="-fx-background-color: #EBE8F9;">
+                     <children>
+                        <Label fx:id="TITLE" layoutX="61.0" layoutY="9.0" prefHeight="30.0" prefWidth="723.0" text="GCM">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="btn_back" fitHeight="31.0" fitWidth="31.0" layoutX="14.0" layoutY="9.0" onMouseClicked="#click_back" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/icons8-undo-52.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                <StackPane prefHeight="680.0" prefWidth="844.0" style="-fx-background-color: #02030A;">
+                  <children>
+                    <Pane id="Loginpane" fx:id="Payment" prefHeight="680.0" prefWidth="793.0" style="-fx-background-color: #EBE8F9;&#10;" visible="false">
+                      <children>
+                        <VBox id="VBox" alignment="TOP_CENTER" layoutX="116.0" layoutY="180.0" minHeight="127.0489501953125" prefHeight="458.0489501953125" prefWidth="257.0" style="">
+                          <children>
+                            <HBox maxWidth="-Infinity" prefHeight="-1.0" prefWidth="200.0" style="-fx-background-color: #EBE8F9;&#10;-fx-border-color: #a2a2a2;&#10;-fx-border-width: 2px 2px 2px 2px;" styleClass="null">
+                              <children>
+                                <TextField prefHeight="34.0" prefWidth="200.0" promptText="ID Number" style="-fx-background-color: transparent;">
+                                  <HBox.margin>
+                                    <Insets />
+                                  </HBox.margin>
+                                </TextField>
+                                <ImageView fitHeight="18.249900153702654" fitWidth="24.33319854736328" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                    <Image url="@image/icons8-user-male-26.png" />
+                                  </image>
+                                </ImageView>
+                              </children>
+                              <VBox.margin>
+                                <Insets top="100.0" fx:id="x4" />
+                              </VBox.margin>
+                            </HBox>
+                            <HBox maxWidth="-Infinity" prefHeight="-1.0" prefWidth="200.0" style="-fx-background-color: #EBE8F9;&#10;-fx-border-color: #a2a2a2;&#10;-fx-border-width: 2px 2px 2px 2px;" styleClass="null">
+                              <children>
+                                <TextField prefHeight="34.0" prefWidth="200.0" promptText="Card Number" style="-fx-background-color: transparent;">
+                                  <HBox.margin>
+                                    <Insets />
+                                  </HBox.margin>
+                                </TextField>
+                                <ImageView fitHeight="18.249900153702654" fitWidth="24.33319854736328" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                    <Image url="@image/icons8-user-male-26.png" />
+                                  </image>
+                                </ImageView>
+                              </children>
+                            </HBox>
+                            <HBox maxWidth="-Infinity" prefHeight="-1.0" prefWidth="200.0" style="-fx-background-color: #EBE8F9;&#10;-fx-border-color: #a2a2a2;&#10;-fx-border-width: 2px 2px 2px 2px;" styleClass="null">
+                              <children>
+                                <TextField prefHeight="34.0" prefWidth="200.0" promptText="CVV" style="-fx-background-color: transparent;">
+                                  <HBox.margin>
+                                    <Insets />
+                                  </HBox.margin>
+                                </TextField>
+                                <ImageView fitHeight="18.249900153702654" fitWidth="24.33319854736328" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                    <Image url="@image/icons8-user-male-26.png" />
+                                  </image>
+                                  <HBox.margin>
+                                    <Insets right="2.0" top="5.0" fx:id="x3" />
+                                  </HBox.margin>
+                                </ImageView>
+                              </children>
+                            </HBox>
+                            <HBox maxWidth="-Infinity" prefHeight="-1.0" prefWidth="200.0" style="-fx-background-color: #EBE8F9;&#10;-fx-border-color: #a2a2a2;&#10;-fx-border-width: 2px 2px 2px 2px;" styleClass="null">
+                              <children>
+                                <PasswordField prefHeight="35.0" prefWidth="200.0" promptText="Password" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS" />
+                                <ImageView fitHeight="18.249900153702654" fitWidth="24.33319854736328" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                    <Image backgroundLoading="false" url="@image/icons8-lock-26.png" />
+                                  </image>
+                                             <HBox.margin>
+                                    <Insets right="2.0" top="5.0" fx:id="x3" />
+                                             </HBox.margin>
+                                </ImageView>
+                              </children>
+                              <VBox.margin>
+                                <Insets top="10.0" fx:id="x8" />
+                              </VBox.margin>
+                            </HBox>
+                            <HBox maxWidth="-Infinity" prefHeight="-1.0" prefWidth="200.0" style="-fx-background-color: #EBE8F9;&#10;-fx-border-color: #a2a2a2;&#10;-fx-border-width: 2px 2px 2px 2px;" styleClass="null">
+                              <children>
+                                <PasswordField prefHeight="35.0" prefWidth="200.0" promptText="Confirm password" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS" />
+                                <ImageView fitHeight="18.249900153702654" fitWidth="24.33319854736328" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                    <Image backgroundLoading="false" url="@image/icons8-lock-26.png" />
+                                  </image>
+                                  <HBox.margin>
+                                    <Insets right="2.0" top="5.0" fx:id="x3" />
+                                  </HBox.margin>
+                                </ImageView>
+                              </children>
+                                       <VBox.margin>
+                                <Insets top="10.0" fx:id="x8" />
+                                       </VBox.margin>
+                            </HBox>
+                          </children>
+                                 <padding>
+                                    <Insets top="100.0" fx:id="x9" />
+                                 </padding>
+                        </VBox>
+                        <ImageView fitHeight="139.0" fitWidth="139.0" layoutX="327.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@image/icons8-marker-96.png" />
+                          </image>
+                        </ImageView>
+                        <ImageView fitHeight="62.9998779296875" fitWidth="62.9998779296875" layoutX="365.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@image/icons8-sleeping-in-bed-240.png" />
+                          </image>
+                        </ImageView>
+                        <ImageView fitHeight="62.9998779296875" fitWidth="62.9998779296875" layoutX="276.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@image/icons8-shopping-bag-80.png" />
+                          </image>
+                        </ImageView>
+                        <ImageView fitHeight="63.0" fitWidth="63.0" layoutX="559.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@image/icons8-carpark-80.png" />
+                          </image>
+                        </ImageView>
+                        <ImageView fitHeight="63.0" fitWidth="63.0" layoutX="463.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image backgroundLoading="false" url="@image/icons8-food-100.png" />
+                          </image>
+                        </ImageView>
+                        <ImageView fitHeight="62.99999237060547" fitWidth="62.99999237060547" layoutX="181.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@image/icons8-fountain-100.png" />
+                          </image>
+                        </ImageView>
+                        <Separator layoutX="393.0" layoutY="384.0" orientation="VERTICAL" prefHeight="230.0" style="-fx-background-color: #BDBBC3;&#10;" />
+                        <Button id="login_btn" layoutX="428.0" layoutY="478.0" minHeight="25.951171875" mnemonicParsing="false" prefHeight="48.0" prefWidth="145.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20; -fx-background-color: transparent;" text="Sign Up">
+                          <stylesheets>
+                            <URL value="@style.css" />
+                          </stylesheets>
+                        </Button>
+                        <Circle layoutX="373.0" layoutY="654.0" radius="9.12493896484375" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);&#10;">
+                          <fill>
+                            <Color blue="0.765" green="0.733" red="0.741" fx:id="x5" />
+                          </fill>
+                        </Circle>
+                        <Circle fill="#bdd4f8" layoutX="419.0" layoutY="654.0" radius="9.12493896484375" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);&#10;" />
+                      </children>
+                      <stylesheets>
+                        <URL value="@style.css" />
+                      </stylesheets>
+                    </Pane>
+                    <Pane id="Loginpane" fx:id="registerpane" prefHeight="680.0" prefWidth="793.0" style="-fx-background-color: #EBE8F9;&#10;" visible="false">
+                      <stylesheets>
+                        <URL value="@style.css" />
+                      </stylesheets>
+                    </Pane>
+                    <Pane fx:id="Loginpane" prefHeight="680.0" prefWidth="787.0" style="-fx-background-color: #EBE8F9;&#10;" visible="false">
+                      <children>
+                        <VBox id="VBox" alignment="TOP_CENTER" layoutX="262.0" layoutY="291.0" minHeight="127.0489501953125" prefHeight="375.0489501953125" prefWidth="257.0" style="">
+                          <children>
+                            <Label text="Sign In" wrapText="false">
+                                       <font>
+                                  <Font size="20.0" fx:id="x7" />
+                                       </font>
+                                    </Label>
+                            <HBox maxWidth="-Infinity" prefHeight="-1.0" prefWidth="200.0" style="-fx-background-color: #EBE8F9;&#10;-fx-border-color: #a2a2a2;&#10;-fx-border-width: 2px 2px 2px 2px;&#10;-fx-focus-color: #d35244;&#10; -fx-faint-focus-color: #d3524422;" styleClass="null">
+                              <children>
+                                <TextField fx:id="txt_login_username" prefHeight="34.0" prefWidth="200.0" promptText="Username" style="-fx-background-color: transparent;&#10;">
+                                  <HBox.margin>
+                                    <Insets />
+                                  </HBox.margin>
+                                </TextField>
+                                <ImageView fitHeight="18.249900153702654" fitWidth="24.33319854736328" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                    <Image url="@image/icons8-user-male-26.png" />
+                                  </image>
+                                  <HBox.margin>
+                                    <Insets right="2.0" top="5.0" fx:id="x3" />
+                                  </HBox.margin>
+                                </ImageView>
+                              </children>
+                              <VBox.margin>
+                                <Insets top="18.0" />
+                              </VBox.margin>
+                            </HBox>
+                            <HBox maxWidth="-Infinity" prefHeight="-1.0" prefWidth="200.0" style="-fx-background-color: #EBE8F9;&#10;-fx-border-color: #a2a2a2;&#10;-fx-border-width: 2px 2px 2px 2px;" styleClass="null">
+                              <children>
+                                <PasswordField fx:id="txt_login_password" prefHeight="35.0" prefWidth="200.0" promptText="Password" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS" />
+                                <ImageView fitHeight="18.249900153702654" fitWidth="24.33319854736328" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                    <Image backgroundLoading="false" url="@image/icons8-lock-26.png" />
+                                  </image>
+                                             <HBox.margin>
+                                    <Insets right="2.0" top="5.0" fx:id="x3" />
+                                             </HBox.margin>
+                                </ImageView>
+                              </children>
+                              <VBox.margin>
+                                <Insets top="10.0" fx:id="x8" />
+                              </VBox.margin>
+                            </HBox>
+                            <Button id="login_btn" fx:id="button_signin" minHeight="25.951171875" mnemonicParsing="false" prefHeight="42.0" prefWidth="100.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20;" text="Login">
+                              <stylesheets>
+                                <URL value="@style.css" />
+                              </stylesheets>
+                              <VBox.margin>
+                                <Insets top="15.0" />
+                              </VBox.margin>
+                            </Button>
+                          </children>
+                          <padding>
+                            <Insets top="100.0" fx:id="x4" />
+                          </padding>
+                        </VBox>
+                        <ImageView fitHeight="139.0" fitWidth="139.0" layoutX="327.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@image/icons8-marker-96.png" />
+                          </image>
+                        </ImageView>
+                        <ImageView fitHeight="62.9998779296875" fitWidth="62.9998779296875" layoutX="365.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@image/icons8-sleeping-in-bed-240.png" />
+                          </image>
+                        </ImageView>
+                        <ImageView fitHeight="62.9998779296875" fitWidth="62.9998779296875" layoutX="276.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@image/icons8-shopping-bag-80.png" />
+                          </image>
+                        </ImageView>
+                        <ImageView fitHeight="63.0" fitWidth="63.0" layoutX="559.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@image/icons8-carpark-80.png" />
+                          </image>
+                        </ImageView>
+                        <ImageView fitHeight="63.0" fitWidth="63.0" layoutX="463.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image backgroundLoading="true" url="@image/icons8-food-100.png" />
+                          </image>
+                        </ImageView>
+                        <ImageView fitHeight="62.99999237060547" fitWidth="62.99999237060547" layoutX="181.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@image/icons8-fountain-100.png" />
+                          </image>
+                        </ImageView>
+                        <Separator layoutX="258.0" layoutY="379.0" orientation="VERTICAL" prefHeight="200.0" style="-fx-background-color: #BDBBC3;&#10;" />
+                        <Label layoutX="91.0" layoutY="433.0" text="View city catalog" wrapText="false">
+                                 <font>
+                            <Font size="17.0" fx:id="x6" />
+                                 </font>
+                              </Label>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="14.0" layoutY="634.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                          <image>
+                            <Image url="@image/icons8-facebook-48.png" />
+                          </image>
+                        </ImageView>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="54.0" layoutY="634.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                          <image>
+                            <Image url="@image/icons8-gmail-48.png" />
+                          </image>
+                        </ImageView>
+                        <Label font="$x7" layoutX="74.0" layoutY="390.0" text="Continue as Guest" wrapText="false" />
+                        <Label font="$x6" layoutX="105.0" layoutY="469.0" text="Search maps" wrapText="false" />
+                        <Button id="login_btn" fx:id="btn_login_guest" disable="false" graphicTextGap="6.0" layoutX="101.0" layoutY="538.0" minHeight="25.951171875" mnemonicParsing="false" prefHeight="42.0" prefWidth="100.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20;" text="Next">
+                          <stylesheets>
+                            <URL value="@style.css" />
+                          </stylesheets>
+                        </Button>
+                        <Label font="$x7" layoutX="600.0" layoutY="390.0" text="Sign Up" wrapText="false" />
+                        <Separator layoutX="524.0" layoutY="377.0" orientation="VERTICAL" prefHeight="200.0" style="-fx-background-color: #BDBBC3;&#10;" />
+                        <Label font="$x6" layoutX="549.0" layoutY="433.0" text="View and Download Maps" wrapText="false" />
+                        <Label font="$x6" layoutX="583.0" layoutY="469.0" text="More Feautures !" wrapText="false" />
+                        <Button id="login_btn" fx:id="btn_register" disable="false" layoutX="585.0" layoutY="538.0" minHeight="25.951171875" mnemonicParsing="false" prefHeight="42.0" prefWidth="100.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20;" text="Sign Up">
+                          <stylesheets>
+                            <URL value="@style.css" />
+                          </stylesheets>
+                        </Button>
+                              <Label layoutX="39.0" layoutY="19.0" text="GCM">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                      </children>
+                      <stylesheets>
+                        <URL value="@style.css" />
+                      </stylesheets>
+                    </Pane>
+                        <Pane fx:id="Home2" prefHeight="576.0000999999975" prefWidth="793.0" style="-fx-background-color: #EBE8F9;&#10;" visible="false" />
+                        <Pane fx:id="Profile_pane" prefHeight="576.0000999999975" prefWidth="793.0" style="-fx-background-color: #EBE8F9;&#10;" visible="false" />
+                        <Pane fx:id="subscribe_pane" prefHeight="576.0000999999975" prefWidth="793.0" style="-fx-background-color: #EBE8F9;&#10;" visible="false" />
+                        <Pane fx:id="Cities_pane" prefHeight="110.0" prefWidth="793.0" style="-fx-background-color: #EBE8F9;&#10;" visible="false" />
+                        <Pane fx:id="PANE_background" prefHeight="615.0" prefWidth="792.0" style="-fx-background-color: #EBE8F9;&#10;" />
+                        <Pane fx:id="PANE" prefHeight="680.0" prefWidth="793.0" style="-fx-background-color: #EBE8F9;&#10;" />
+                  </children>
+                </StackPane>
+               </children>
+            </VBox>
+            <Pane fx:id="close_pane" prefHeight="680.0" prefWidth="81.0" style="-fx-background-color: #EBE8F9;">
+               <children>
+            <ImageView id="exit" fx:id="btn_exit" fitHeight="31.0" fitWidth="31.0" layoutX="-1.0" layoutY="7.0" onMousePressed="#exit_all" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@image/icons8-cancel-64.png" />
+              </image>
+            </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+    <AnchorPane fx:id="Paneleft" layoutX="0.0" layoutY="0.0" prefHeight="680.0" prefWidth="257.0">
+      <children>
+        <VBox id="VBox" fx:id="VBox1" alignment="TOP_CENTER" layoutX="0.0" layoutY="0.0" prefHeight="680.0" prefWidth="257.0" style="-fx-background-color: #EBE8F9;">
+          <children>
+                  <Pane fx:id="pane_profile" prefHeight="133.0" prefWidth="257.0">
+                     <children>
+                  <ImageView fx:id="btn_profile" fitHeight="73.0" fitWidth="67.0" layoutX="95.0" layoutY="24.0" onMouseClicked="#profile_click" onMouseEntered="#profile_mouse_on" onMouseExited="#profile_mouse_out" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                      <Image url="@image/icons8-male-user-100.png" />
+                    </image>
+                  </ImageView>
+                  <Label fx:id="txt_welcome" alignment="CENTER" contentDisplay="CENTER" layoutX="7.0" layoutY="91.0" prefHeight="17.0" prefWidth="248.0" text="Welcome," textAlignment="CENTER" textFill="BLACK" />
+                        <Label fx:id="txt_role" alignment="CENTER" contentDisplay="CENTER" layoutX="4.0" layoutY="110.0" prefHeight="17.0" prefWidth="248.0" text="Guest" textAlignment="CENTER" textFill="BLACK" />
+                     </children>
+                  </Pane>
+            <Button id="btnOverview" fx:id="btn_login" alignment="CENTER_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onMouseClicked="#LoginPage" prefHeight="42.0" prefWidth="183.0" text="Login" textAlignment="LEFT" underline="false" VBox.vgrow="NEVER">
+              <graphic>
+                <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@image/icons8-customer-128.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+              <stylesheets>
+                <URL value="@style.css" />
+              </stylesheets>
+              <textFill>
+                <Color blue="0.898" green="0.898" red="0.906" fx:id="x1" />
+              </textFill>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+            </Button>
+            <Button fx:id="btn_home" alignment="CENTER_LEFT" disable="false" graphicTextGap="22.0" mnemonicParsing="false" onMouseClicked="#HomePage" prefHeight="42.0" prefWidth="183.0" text="Catalog" textFill="$x1" VBox.vgrow="NEVER">
+              <graphic>
+                <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@image/icons8-saddle-stitched-booklet-100.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+              <stylesheets>
+                <URL value="@style.css" />
+              </stylesheets>
+            </Button>
+            <Button id="btn_register" fx:id="btn_Catalog_edit" alignment="CENTER_LEFT" contentDisplay="LEFT" disable="false" graphicTextGap="22.0" mnemonicParsing="false" onMouseClicked="#btn_Catalog_edit_click" prefHeight="42.0" prefWidth="183.0" text="Edit Catalog" textFill="$x1" VBox.vgrow="NEVER">
+              <graphic>
+                <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@image/icons8-edit-property-50.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+              <stylesheets>
+                <URL value="@style.css" />
+              </stylesheets>
+            </Button>
+                  <HBox alignment="CENTER" prefHeight="48.0" prefWidth="257.0">
+                     <children>
+                        <Button id="btnOverview" fx:id="btn_notification" alignment="CENTER_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onMouseClicked="#btn_notification_clicked" prefHeight="42.0" prefWidth="183.0" text="Notifications" textAlignment="LEFT" underline="false">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/icons8-push-notifications-100.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <stylesheets>
+                              <URL value="@style.css" />
+                           </stylesheets>
+                           <textFill>
+                              <Color blue="0.898" green="0.898" red="0.906" fx:id="x1112" />
+                           </textFill>
+                           <HBox.margin>
+                              <Insets left="40.0" right="5.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Label fx:id="Notification_label" alignment="CENTER" prefHeight="21.0" prefWidth="25.0" style="-fx-background-color: red; -fx-background-radius: 30; -fx-border-radius: 30; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="1" textFill="WHITE" />
+                     </children>
+                  </HBox>
+                  <Button id="btnOverview" fx:id="btn_manage_clients" alignment="CENTER_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onMouseClicked="#btn_manage_clients" prefHeight="42.0" prefWidth="183.0" text="Manage Users" textAlignment="LEFT" underline="false">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/icons8-male-user-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <stylesheets>
+                        <URL value="@style.css" />
+                     </stylesheets>
+                     <textFill>
+                        <Color blue="0.898" green="0.898" red="0.906" fx:id="x11121" />
+                     </textFill>
+                  </Button>
+                  <Button id="btnOverview" fx:id="btn_manage_requests" alignment="CENTER_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onMouseClicked="#btn_manage_requests_clicked" prefHeight="42.0" prefWidth="183.0" text="Manage Requests" textAlignment="LEFT" underline="false">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/icons8-request-service-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <stylesheets>
+                        <URL value="@style.css" />
+                     </stylesheets>
+                     <textFill>
+                        <Color blue="0.898" green="0.898" red="0.906" fx:id="x111212" />
+                     </textFill>
+                  </Button>
+                  <Button id="btnOverview" fx:id="btn_report" alignment="CENTER_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onMouseClicked="#btn_report_clicked" prefHeight="42.0" prefWidth="183.0" text="Reports" textAlignment="LEFT" underline="false">
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/icons8-business-report-80.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <stylesheets>
+                        <URL value="@style.css" />
+                     </stylesheets>
+                     <textFill>
+                        <Color blue="0.898" green="0.898" red="0.906" fx:id="x11121211" />
+                     </textFill>
+                  </Button>
+                  <Button id="btnOverview" fx:id="btn_logout" alignment="CENTER_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#btn_click_logout" prefHeight="42.0" prefWidth="183.0" stylesheets="@style.css" text="Logout" textAlignment="LEFT" underline="false">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/icons8-logout-rounded-up-52.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <textFill>
+                        <Color blue="0.898" green="0.898" red="0.906" fx:id="x1111" />
+                     </textFill>
+                  </Button>
+                  <Button id="btnOverview" fx:id="btn_subscribe" alignment="CENTER_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="183.0" text="Subscribe" textAlignment="LEFT" underline="false" visible="false">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/icons8-vip-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <stylesheets>
+                        <URL value="@style.css" />
+                     </stylesheets>
+                     <textFill>
+                        <Color blue="0.898" green="0.898" red="0.906" fx:id="x11" />
+                     </textFill>
+                  </Button>
+          </children>
+        </VBox>
+      </children>
+    </AnchorPane>
+  </children>
+  <effect>
+    <DropShadow color="#1b1eeb" />
+  </effect>
+</AnchorPane>

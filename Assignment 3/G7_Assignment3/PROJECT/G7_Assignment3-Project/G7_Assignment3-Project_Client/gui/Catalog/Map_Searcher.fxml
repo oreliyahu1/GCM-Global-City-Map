@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="680.0" prefWidth="793.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiControllers.Catalog.MapSearcherController">
+   <children>
+      <Pane fx:id="pnlOverview" layoutX="-6.0" prefHeight="690.0" prefWidth="809.0" style="-fx-background-color: #EBE8F9;&#10;">
+         <children>
+            <ScrollPane hbarPolicy="NEVER" layoutX="26.0" layoutY="159.0" prefHeight="500.0" prefWidth="746.0" style="-fx-background-color: #EBE8F9;" vbarPolicy="ALWAYS">
+               <content>
+                  <VBox fx:id="pnItems" prefHeight="500.0" prefWidth="744.0" spacing="5.0" style="-fx-background-color: #EBE8F9;&#10;">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+               </content>
+               <stylesheets>
+                  <URL value="@style.css" />
+               </stylesheets>
+            </ScrollPane>
+            <TextField fx:id="search_text" layoutX="593.0" layoutY="44.0" onKeyReleased="#search_change" prefHeight="27.0" prefWidth="183.0" promptText="Search Map" style="-fx-background-color: #EBE8F9; -fx-border-color: #000000; -fx-border-radius: 2em;" />
+            <Pane layoutX="38.0" layoutY="95.0" prefHeight="42.0" prefWidth="738.0" style="-fx-background-color: #BDBBC3;">
+               <children>
+                  <Label layoutX="62.0" layoutY="12.0" text="City" textFill="BLACK" />
+                  <Label layoutX="186.0" layoutY="11.0" text="Country" textFill="BLACK" />
+                  <Label layoutX="332.0" layoutY="11.0" text="Maps" textFill="BLACK" />
+                  <Label layoutX="444.0" layoutY="11.0" text="Version" textFill="BLACK" />
+                  <Label fx:id="palces_onpane" layoutX="546.0" layoutY="12.0" text="Places" textFill="BLACK" />
+                  <Label fx:id="tours_onpane" layoutX="640.0" layoutY="12.0" text="Tours" textFill="BLACK" />
+               </children>
+            </Pane>
+            <ComboBox fx:id="combo_search" layoutX="38.0" layoutY="45.0" prefWidth="150.0" promptText="Search By" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

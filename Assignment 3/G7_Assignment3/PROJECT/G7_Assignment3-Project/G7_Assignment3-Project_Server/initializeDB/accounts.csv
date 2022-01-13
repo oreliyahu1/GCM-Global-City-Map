@@ -1,0 +1,9 @@
+firstName,lastName,phone,pass,created,permission,email,username
+Arik,Skigin,054-1212115,147741,2019-11-11 10:20:00,1,a1@gmail.com,arik123
+Haia,Kablan,054-1212114,123456,2019-06-11 13:20:00,4,a2@gmail.com,haia
+Or,Eliyahu,055-1212113,123123,2016-06-19 15:00:00,16,a3@gmail.com,oreliyahu
+Sami,Odeh,052-1212112,123123,2019-05-11 13:20:00,8,a4@gmail.com,sami
+testF,testL,050-0000000,textpass1,2019-05-11 13:20:00,1,test@test.com,test1
+testF2,testL2,052-0000000,textpass2,2019-05-11 13:20:00,1,test2@test.com,test2
+testF3,testL3,053-0000000,textpass3,2017-02-21 10:22:00,1,test3@test.com,test3
+Shlomi,Levi,054-1212111,000000,2019-05-11 13:20:00,2,a5@gmail.com,slxxsmg
